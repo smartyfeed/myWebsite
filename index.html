@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Nikolay 'smartyfeed' Fomichev</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="glitch.js"></script>
+    <script src="spotify.js"></script>
+    <script src="https://kit.fontawesome.com/2e1f415a7d.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <div class="container" style="margin-top: 5%">
+        <div class="row">
+            <div class="six columns">
+                <div class="title">Hey! My name is Nikolay!</div>
+                <h1>Junior developer and general IT fan</h1>
+                <div class="social" style="margin-top: 5%">
+                    <a class="socialLink" href="https://www.linkedin.com/in/nikolay-fomichev-79ba641b1/"><i class="fab fa-linkedin" style="font-size: 3em"></i></a>
+                    <a class="socialLink" href="https://github.com/smartyfeed"><i class="fab fa-github-square socialIcon"></i></a>
+                    <a class="socialLink" href="https://www.instagram.com/smarty_feed/"><i class="fab fa-instagram-square socialIcon"></i></a>
+                    <a class="socialLink" href="https://steamcommunity.com/id/smartyfeed"><i class="fab fa-steam-square socialIcon"></i></a>
+                    <a class="socialLink" href="mailto:nikolay@fomichev.eu"><i class="fas fa-envelope-square socialIcon"></i></a>
+                </div>
+            </div>
+            <div class="two columns">
+                <p></p>
+            </div>
+            <div class="four columns">
+                <p style="margin-top: 5%; text-align: center; font-size: 2.5rem"><span>About me</span></p>
+                <div><img src="img/me.png" alt="" style="display: block; margin-left: auto; margin-right: auto; width: 50%;margin-bottom: 5%"></div>
+
+                <ul class="infobox">
+                    <li><span>18 years old</span></li>
+                    <li><span>living in Prague </span><span style="font-family: Noto Emoji">🇨🇿</span></li>
+                    <li><span>born in Moscow </span><span style="font-family: Noto Emoji">🇷🇺</span></li>
+                    <li><span>interests: coding, cooking, gaming, snowboarding</span></li>
+                    <li><span>fav music: EDM, house, pop, dance, chill</span></li>
+                </ul>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="eight columns">
+                <p></p>
+            </div>
+
+            <div class="four columns">
+                <span>I am currently listening to:</span>
+                <div class="nowPlayingBox">
+                    <div class="container">
+                        <div class="row" style="margin-top: 2%">
+                            <div class="six columns">
+                                <div id="trackArtwork">
+                                    <img src="img/vinyl.png" alt="">
+                                </div>
+
+                            </div>
+                            <div class="six columns">
+                                <div class="trackInfo">
+                                    <span id="trackName"></span>
+                                    <span id="artist">Nothing</span>
+                                </div>
+                                <div id="spotifylink">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        $(function animation() {
+            $('div.title').glitch({
+                charTime: 20,
+            });
+            $('h1').glitch({
+                charTime: 40,
+            });
+            $('span').glitch({
+                charTime: 60,
+            });
+        });
+    </script>
+
+</body></html>
